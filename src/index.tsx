@@ -1,14 +1,10 @@
 import React from 'react';
-import styles from './{{pascal}}.css';
+import {default as Mui{{pascal}}, {{pascal}}Props as Mui{{pascal}}Props} from '@material-ui/core/{{pascal}}';
 
-interface {{pascal}}Props {
-  /** The value for the component to display */
-  value?: string;
+export interface {{pascal}}Props extends Mui{{pascal}}Props {
 }
 
 /** A simple component. */
-export const {{pascal}} = (props: {{pascal}}Props) => {
-  return <div className={styles.{{camel}}}>This is a {{pascal}} component {props.value}</div>;
-}
+export const {{pascal}} = (props: {{pascal}}Props) => <Mui{{pascal}} {...props}></Mui{{pascal}}>;
 
 export default {{pascal}};
